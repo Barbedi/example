@@ -6,7 +6,28 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World!\n";
+    class lista {
+        int data;
+        lista* prev;
+        lista* next;
+    public:
+        lista(int aa) :data(aa), prev(nullptr), next(nullptr){}//konstr
+        ~lista(void){}//destr
+
+        void dodajStart();
+        void dodajEnd();
+        void dodajWskaIndex();
+        void usunStart();
+        void usunEnd();
+        void usunWskaIndex();
+        void wyswietl();
+        void wyswietlOdwrotnie();
+        void wyswitlNastepny();
+        void wyswitlPoprzedni();
+        void czycsListe();
+
+        
+    };
 }
 
 // Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
